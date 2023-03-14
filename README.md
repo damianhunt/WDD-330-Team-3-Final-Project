@@ -3,4 +3,8 @@ WDD-330-Team-3-Final-Project: This is our final project for the semester where w
 
 # Authors
 - Laurels Echichinwo Jr. 
+- Damian Hunt. 
+- McDonald Musimwa. 
+- Kigame Kisia. 
+
 

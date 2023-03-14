@@ -6,7 +6,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Brother Nelson <nelsoned@byui.edu>",
+  "author": "Damian Hunt, McDonald Musimwa, Laurels ECHICHINWO, Kigame Kisia",
   "dependencies": {
     "parcel": "^2.8.3",
     "prettier": "^2.8.4"

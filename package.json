@@ -1,12 +1,12 @@
 {
-  "name": "wdd-330-team-3-final-project",
+  "name": "my-cool-project",
   "version": "1.0.0",
   "description": "WDD330 final project",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Damian Hunt, McDonald Musimwa, Laurels ECHICHINWO, Kigame Kisia",
+  "author": "Brother Nelson <nelsoned@byui.edu>",
   "dependencies": {
     "parcel": "^2.8.3",
     "prettier": "^2.8.4"

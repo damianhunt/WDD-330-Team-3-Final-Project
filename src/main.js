@@ -45,6 +45,7 @@ class UI {
   getBagButtons() {
     const buttons = [...document.querySelectorAll(".bag-btn")];
     buttonsDOM = buttons;
+    //console.log(buttons);
     buttons.forEach((button) => {
       let id = button.dataset.id;
       let inCart = cart.find((item) => item.id === id);
@@ -68,6 +69,7 @@ class UI {
         this.setCartValues(cart);
         //diplay cart item
         this.addCartItem(cartItem);
+
         //show cart
         this.showCart();
       });
@@ -84,34 +86,34 @@ class UI {
     });
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
     cartIterms.innerText = itemsTotal;
-  
   }
-
+/*The problem is that when i click add item it is added to cart but then not injected into the dom*/
   //this function creates a templateand inserts items that has been selected
   addCartItem(item) {
     const div = document.createElement("div");
     div.classList.add("cart-item");
     div.innerHTML = `
-        <img src=${item.image}>
-        <div>
-            <h4>${item.title}</h4>
-            <h5>$ ${item.price}</h5>
-            <span class="remove-item" data-id=${item.id}>
-    
-            </span>
-        </div>
-        <div>
-            <i class="fas fa-chevron-up" data-id=${item.id}></i>
-            <p class="item-amount">${item.amount}</p>
-            <i class="fas fa-chevron-down" data-id=${item.id}></i>
-        </div>`;
+            <img src=${item.image} alt=${item.title}>
+            <div>
+                <h4>${item.title}</h4>
+                <h5>$ ${item.price}</h5>
+                <span class="remove-item" data-id=${item.id}>
+        remove
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                <p class="item-amount">${item.amount}</p>
+                <i class="fas fa-chevron-down" data-id=${item.id}></i>
+            </div>`;
     cartContent.appendChild(div);
+   
     console.log(cartContent);
   }
 
   showCart() {
-    cartOverlay.classList.add('transparentBcg');
-    cartDom.classList.add('showCart');
+    cartOverlay.classList.add("transparentBcg");
+    cartDom.classList.add("showCart");
   }
 } // end of UI  class
 

@@ -8,7 +8,9 @@
   },
   "author": "Brother Nelson <nelsoned@byui.edu>",
   "dependencies": {
+    "eslint": "^8.36.0",
     "parcel": "^2.8.3",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "vite": "^4.2.0"
   }
 }

@@ -568,22 +568,20 @@ var _localStorageMjsDefault = parcelHelpers.interopDefault(_localStorageMjs);
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCart = document.querySelector(".clear-cart");
-const cartDom = document.querySelector(".cart");
-const cartOverlay = document.querySelector(".cart-items");
-const cartIterms = document.querySelector(".cart-overlay");
-const cartTotal = document.querySelector(".cart-total");
-const cartContent = document.querySelector(".cart-content");
 // cart
 let cart = [];
+//buttons
+let buttonsDom = 0;
 document.addEventListener("DOMContentLoaded", ()=>{
     //instantiate new objects
     const ui = new (0, _displayProductsMjsDefault.default)(cart);
+    //cart=ui.setCartValues()
     const products = new (0, _getproductsMjsDefault.default)();
-    const Storage = new (0, _localStorageMjsDefault.default)();
     //get all products
     products.getProducts().then((products)=>{
         ui.displayProducts(products);
-        Storage.saveProducts(products);
+        ui.getBagButtons(buttonsDom);
+        (0, _localStorageMjsDefault.default).saveProducts(products);
     }).then(()=>{
         //this getBagButtons functions is getting in the dataset ids of each product
         ui.getBagButtons();
@@ -591,14 +589,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 },{"./displayProducts.mjs":"aeWR1","./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aeWR1":[function(require,module,exports) {
-//import local storage where we are getting the items added to the cart
-// display the products
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _localStorageMjs = require("./localStorage.mjs");
+var _localStorageMjsDefault = parcelHelpers.interopDefault(_localStorageMjs);
+// display the products
+//let localStorage = new saveProductsToLocalStorage();
 const productDom = document.querySelector(".products-center");
+const cartIterms = document.querySelector(".cart-overlay");
+const cartTotal = document.querySelector(".cart-total");
+const cartContent = document.querySelector(".cart-content");
 class Ui {
     constructor(cart){
         this.cart = cart;
+        //this.cartIterms=cartIterms;
+        //this.cartTotal=cartTotal;
+        this.buttonsDom = buttonsDom;
     }
     displayProducts(products) {
         let result = "";
@@ -618,11 +624,12 @@ class Ui {
         });
         productDom.innerHTML = result;
     }
-    getBagButtons() {
+    getBagButtons(buttonsDom1) {
         //get all the button turn them into an array using three dots
         const buttons = [
             ...document.querySelectorAll(".bag-btn")
         ];
+        buttonsDom1 = buttons;
         buttons.forEach((button)=>{
             let id = button.dataset.id;
             let inCart = this.cart.find((item)=>item.id === id);
@@ -631,19 +638,94 @@ class Ui {
                 button.disabled = true;
             }
             button.addEventListener("click", (event)=>{
-                event.target.innerText = "IN Cart";
+                event.target.innerText = "In Cart";
                 event.target.disabled = true;
-            //get product from the produts and 
-            //add product to the cart
-            //save cart in local storage
-            //set cart values
-            //diplay cart item
-            //show cart
+                //get product from the produts and
+                let cartItem = {
+                    ...(0, _localStorageMjsDefault.default).getProduct(id),
+                    amount: 1
+                };
+                //add product to the cart
+                this.cart = [
+                    ...this.cart,
+                    cartItem
+                ];
+                //save cart in local storage
+                (0, _localStorageMjsDefault.default).saveCart(this.cart);
+                //set cart values
+                this.setCartValues(this.cart);
+                //diplay cart item
+                this.addCartItem(cartItem);
+                //show cart
+                this.showCart();
             });
         });
     }
+    setCartValues() {
+        let tempTotal = 0;
+        let itemsTotal = 0;
+        this.cart.map((item)=>{
+            tempTotal += item.price * item.amount;
+            itemsTotal += item.amount;
+        });
+        cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+        cartIterms.innerText = itemsTotal;
+    }
+    //this function creates a template of the item that has been selected and add it to the cart content
+    addCartItem(item) {
+        const div = document.createElement("div");
+        div.classList.add("cart-item");
+        div.innerHTML = `
+    <img src=${item.image}>
+    <div>
+        <h4>${item.title}</h4>
+        <h5>$ ${item.price}</h5>
+        <span class="remove-item" data-id=${item.id}>
+
+        </span>
+    </div>
+    <div>
+        <i class="fas fa-chevron-up" data-id=${item.id}></i>
+        <p class="item-amount">${item.amount}</p>
+        <i class="fas fa-chevron-down" data-id=${item.id}></i>
+    </div>`;
+        cartContent.appendChild(div);
+        console.log(cartContent);
+    }
+    showCart() {
+        const cartDom = document.querySelector(".cart");
+        const cartOverlay = document.querySelector(".cart-items");
+        cartOverlay.classList.add("transparentBcg");
+        cartDom.classList.add("showCart");
+    }
 }
 exports.default = Ui;
+
+},{"./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iIdyc":[function(require,module,exports) {
+//local storage
+// establish a function that takes an array and stringfy it 
+/*
+when you access the localStorage there is many functions available to you this time use the setItem
+ then pass the first argument is a key that will be matched with an array of the products passed as an argument 
+
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+class Storage {
+    //this saves the products catalogue to the local storage 
+    static saveProducts(products) {
+        localStorage.setItem("products", JSON.stringify(products));
+    }
+    //this one gets the product we have selected based on product id from the localstorage 
+    static getProduct(id) {
+        let products = JSON.parse(localStorage.getItem("products"));
+        return products.find((item)=>item.id == id);
+    }
+    //this saves the products selected to the local storage under cart
+    static saveCart(cart) {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+}
+exports.default = Storage;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -685,28 +767,13 @@ class getProducts {
             let result = await fetch("https://fakestoreapi.com/products");
             let data = await result.json();
             return data;
+        //console.log(data);
         } catch (error) {
             return console.log(error);
         }
     }
 }
 exports.default = getProducts;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iIdyc":[function(require,module,exports) {
-//local storage
-// establish a function that takes an array and stringfy it 
-/*
-when you access the localStorage there is many functions available to you this time use the setItem
- then pass the first argument is a key that will be matched with an array of the products passed as an argument 
-
-*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-class saveProductsToLocalStorage {
-    saveProducts(products) {
-        localStorage.setItem("products", JSON.stringify(products));
-    }
-}
-exports.default = saveProductsToLocalStorage;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cJcMZ","2kQhy"], "2kQhy", "parcelRequirea26a")
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #058116;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -29,6 +29,61 @@ body {
   background: rgb(231, 226, 221);
   z-index: 1;
 }
+
+.navbar button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--primaryColor);
+}
+
+.dropDownNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.dropDownNav ul li a {
+display: block;
+  text-decoration: none;
+  list-style: none;
+  padding: 5px;
+  text-align: center;
+  background-color: var(--mainGrey);
+  color: var(--primaryColor);
+  border: 1px solid black;
+}
+
+
+.dropDownNav ul li.active a {
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.dropDownNav ul li a:hover {
+  background-color: transparent;
+}
+
+
+.dropDownNav ul {display: none;}
+.dropDownNav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+.navbar-center ul {
+  list-style-type: none;
+  display: none;
+}
+.navbar-center li {
+  padding: 5px;
+}
+
 .navbar-center {
   width: 100%;
   max-width: 1170px;
@@ -38,6 +93,11 @@ body {
   justify-content: space-between;
   padding: 0 1.5rem;
 }
+
+.nav-logo {
+  max-width: 80px;
+}
+
 .nav-icon {
   font-size: 1.5rem;
 }
@@ -57,7 +117,7 @@ body {
 /*------------ End of nav bar----------------*/
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("../images/product-1.jpg") center/cover no-repeat;
+  background: url("../images/vegetables-isle.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,4 +319,45 @@ body {
 }
 
 /* --------------- End of Cart ---------------- */
+
+
+/* -------------- Large Screen --------------- */
+@media only screen and (min-width: 60rem) {
+
+#primaryNav {
+  display: none;
+}
+
+
+#mainNav {
+  max-width: 600px;
+  display: flex;
+  
+}
+
+#mainNav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: auto;
+}
+
+#mainNav ul li a{
+  padding: .8rem 2vw;
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: white;
+  
+}
+
+#mainNav ul li a:hover {
+  color: #5C0029;
+}
+
+
+#hamburgerBtn {
+  display: none;
+}
+
+}
+/* -------------- End of Large Screen --------------- */
 

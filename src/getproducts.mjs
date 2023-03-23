@@ -7,7 +7,7 @@ export default class Products {
       let result = await fetch(url);
       if (result.ok) {
         let data = await result.json();
-       console.log(data);
+       //console.log(data);
         return data;
         
       }

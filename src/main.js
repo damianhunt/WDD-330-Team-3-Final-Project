@@ -15,7 +15,7 @@ const productsDOM = document.querySelector(".products-center");
 const cartIterms = document.querySelector(".cart-overlay");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
-
+//const cartContent = document.querySelector(".cart-content");
 //
 let cart = [];
 
@@ -90,6 +90,7 @@ class UI {
 /*The problem is that when i click add item it is added to cart but then not injected into the dom*/
   //this function creates a templateand inserts items that has been selected
   addCartItem(item) {
+  
     const div = document.createElement("div");
     div.classList.add("cart-item");
     div.innerHTML = `
@@ -106,9 +107,12 @@ class UI {
                 <p class="item-amount">${item.amount}</p>
                 <i class="fas fa-chevron-down" data-id=${item.id}></i>
             </div>`;
+            console.log(cartDom)
     cartContent.appendChild(div);
    
-    console.log(cartContent);
+   cartDom.appendChild(cartContent);
+   cartOverlay.appendChild(cartDom);
+    console.log(cartDom)
   }
 
   showCart() {

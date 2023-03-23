@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"e11Rl":[function(require,module,exports) {
+})({"4L9Ij":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -574,6 +574,7 @@ const productsDOM = document.querySelector(".products-center");
 const cartIterms = document.querySelector(".cart-overlay");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
+//const cartContent = document.querySelector(".cart-content");
 //
 let cart = [];
 //
@@ -664,8 +665,11 @@ class UI {
                 <p class="item-amount">${item.amount}</p>
                 <i class="fas fa-chevron-down" data-id=${item.id}></i>
             </div>`;
+        console.log(cartDom);
         cartContent.appendChild(div);
-        console.log(cartContent);
+        cartDom.appendChild(cartContent);
+        cartOverlay.appendChild(cartDom);
+        console.log(cartDom);
     }
     showCart() {
         cartOverlay.classList.add("transparentBcg");
@@ -686,7 +690,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 console.log("Hello ");
 
-},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
+},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"hLSXH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let url = "https://fakestoreapi.com/products";
@@ -696,7 +700,7 @@ class Products {
             let result = await fetch(url);
             if (result.ok) {
                 let data = await result.json();
-                console.log(data);
+                //console.log(data);
                 return data;
             }
         } catch (error) {
@@ -706,7 +710,7 @@ class Products {
 }
 exports.default = Products;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"7XFfv":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -762,6 +766,6 @@ class Storage {
 }
 exports.default = Storage;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["e11Rl","gLLPy"], "gLLPy", "parcelRequirea26a")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}]},["4L9Ij","gLLPy"], "gLLPy", "parcelRequirea26a")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

@@ -86,6 +86,7 @@ class UI {
     });
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
     cartIterms.innerText = itemsTotal;
+    console.log(cartTotal,cartIterms)
   }
 /*The problem is that when i click add item it is added to cart but then not injected into the dom*/
   //this function creates a templateand inserts items that has been selected

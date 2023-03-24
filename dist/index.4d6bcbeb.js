@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"4L9Ij":[function(require,module,exports) {
+})({"bqnBC":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -646,6 +646,7 @@ class UI {
         });
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
         cartIterms.innerText = itemsTotal;
+        console.log(cartTotal, cartIterms);
     }
     /*The problem is that when i click add item it is added to cart but then not injected into the dom*/ //this function creates a templateand inserts items that has been selected
     addCartItem(item) {
@@ -690,7 +691,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 console.log("Hello ");
 
-},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"hLSXH":[function(require,module,exports) {
+},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"nLfgj"}],"hLSXH":[function(require,module,exports) {
+//let url = 'https://api.storerestapi.com/products';
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let url = "https://fakestoreapi.com/products";
@@ -700,7 +702,7 @@ class Products {
             let result = await fetch(url);
             if (result.ok) {
                 let data = await result.json();
-                //console.log(data);
+                console.log(data);
                 return data;
             }
         } catch (error) {
@@ -710,7 +712,7 @@ class Products {
 }
 exports.default = Products;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"7XFfv":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"nLfgj"}],"nLfgj":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -766,6 +768,6 @@ class Storage {
 }
 exports.default = Storage;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}]},["4L9Ij","gLLPy"], "gLLPy", "parcelRequirea26a")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"nLfgj"}]},["bqnBC","gLLPy"], "gLLPy", "parcelRequirea26a")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

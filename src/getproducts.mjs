@@ -1,4 +1,5 @@
-let url = "https://fakestoreapi.com/products";
+//let url = 'https://api.storerestapi.com/products';
+let url = 'https://fakestoreapi.com/products';
 //getting the products from API
 
 export default class Products {
@@ -7,7 +8,7 @@ export default class Products {
       let result = await fetch(url);
       if (result.ok) {
         let data = await result.json();
-       //console.log(data);
+       console.log(data);
         return data;
         
       }

@@ -111,7 +111,7 @@ body {
   font-size: 2.5rem;
 }
 
-.products-center {
+.products-area {
   width: 90vw;
   max-width: 1170px;
   grid-column-gap: 1.5rem;
@@ -205,11 +205,11 @@ body {
   transform: translateX(100%);
 }
 
-.showCart {
+.showCaseCart {
   transform: translateX(0);
 }
 
-.transparentBcg {
+.transparentCover {
   visibility: visible;
 }
 

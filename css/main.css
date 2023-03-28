@@ -162,7 +162,7 @@ display: block;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.products-center {
+.products-area {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -250,10 +250,10 @@ display: block;
   transition: var(--mainTransition);
   transform: translateX(100%);
 }
-.showCart {
+.showCaseCart {
   transform: translateX(0);
 }
-.transparentBcg {
+.transparentCover {
   visibility: visible;
 }
 @media screen and (min-width: 768px) {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #058116;
+  --primaryColor: #470aa2c7;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -95,7 +95,7 @@ display: block;
 }
 
 .nav-logo {
-  max-width: 80px;
+  max-height: 40px;
 }
 
 .nav-icon {
@@ -117,7 +117,7 @@ display: block;
 /*------------ End of nav bar----------------*/
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("../images/vegetables-isle.jpg") center/cover no-repeat;
+  background: url("../images/Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

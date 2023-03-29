@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"e11Rl":[function(require,module,exports) {
+})({"aaunJ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -774,7 +774,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         ui.getBtnsBag();
         ui.cartFunctionality();
     });
-}); //console.log("Hello ");
+});
+//console.log("Hello ");
+// hamburger
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+const x = document.getElementById("hamburgerBtn");
+x.onclick = toggleMenu;
 
 },{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -861,6 +869,6 @@ class Storage {
 }
 exports.default = Storage;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["e11Rl","gLLPy"], "gLLPy", "parcelRequirea26a")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aaunJ","gLLPy"], "gLLPy", "parcelRequirea26a")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

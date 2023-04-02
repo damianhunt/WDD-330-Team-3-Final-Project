@@ -787,11 +787,11 @@ x.onclick = toggleMenu;
 },{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-let url = "https://fakestoreapi.com/products";
+let url = "https://server.com/data/products";
 class Products {
     async getProducts() {
         try {
-            let result = await fetch(url);
+            let result = await fetch(items);
             if (result.ok) {
                 let data = await result.json();
                 //console.log(data);

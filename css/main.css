@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #058116;
-  --mainWhite: #fff;
+  --primaryColor: #780991c7;
+  --mainWhite: #fffbdd;
   --mainBlack: #222;
-  --mainGrey: #ececec;
+  --mainGrey: hsl(270, 11%, 83%);
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
@@ -95,7 +95,7 @@ display: block;
 }
 
 .nav-logo {
-  max-width: 80px;
+  max-height: 40px;
 }
 
 .nav-icon {
@@ -117,7 +117,7 @@ display: block;
 /*------------ End of nav bar----------------*/
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("../images/vegetables-isle.jpg") center/cover no-repeat;
+  background: url("../images/Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@ display: block;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.products-center {
+.products-area {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -250,10 +250,10 @@ display: block;
   transition: var(--mainTransition);
   transform: translateX(100%);
 }
-.showCart {
+.showCaseCart {
   transform: translateX(0);
 }
-.transparentBcg {
+.transparentCover {
   visibility: visible;
 }
 @media screen and (min-width: 768px) {

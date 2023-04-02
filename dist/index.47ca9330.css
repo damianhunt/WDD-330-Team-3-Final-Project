@@ -1,9 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 :root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
+  --primaryColor: #780991c7;
+  --mainWhite: #fffbdd;
   --mainBlack: #222;
-  --mainGrey: #ececec;
+  --mainGrey: #d4cfd8;
   --mainSpacing: .1rem;
   --mainTransition: all .3s linear;
 }
@@ -31,6 +31,65 @@ body {
   top: 0;
 }
 
+.navbar button {
+  color: var(--primaryColor);
+  background: none;
+  border: none;
+  margin: .2rem 2vw;
+  font-size: 2rem;
+}
+
+.dropDownNav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dropDownNav ul li a {
+  text-align: center;
+  background-color: var(--mainGrey);
+  color: var(--primaryColor);
+  border: 1px solid #000;
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+}
+
+.dropDownNav ul li.active a {
+  color: #fff;
+  background-color: #0003;
+}
+
+.dropDownNav ul li a:hover {
+  background-color: #0000;
+}
+
+.dropDownNav ul {
+  display: none;
+}
+
+.dropDownNav ul.open, #hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(2), #hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+.navbar-center ul {
+  list-style-type: none;
+  display: none;
+}
+
+.navbar-center li {
+  padding: 5px;
+}
+
 .navbar-center {
   width: 100%;
   max-width: 1170px;
@@ -39,6 +98,10 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
+}
+
+.nav-logo {
+  max-height: 40px;
 }
 
 .nav-icon {
@@ -62,7 +125,7 @@ body {
 
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("product-1.6825b34f.jpg") center / cover no-repeat;
+  background: url("Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.84257064.jpg") center / cover no-repeat;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -111,7 +174,7 @@ body {
   font-size: 2.5rem;
 }
 
-.products-center {
+.products-area {
   width: 90vw;
   max-width: 1170px;
   grid-column-gap: 1.5rem;
@@ -205,11 +268,11 @@ body {
   transform: translateX(100%);
 }
 
-.showCart {
+.showCaseCart {
   transform: translateX(0);
 }
 
-.transparentBcg {
+.transparentCover {
   visibility: visible;
 }
 
@@ -279,6 +342,38 @@ body {
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 60rem) {
+  #primaryNav {
+    display: none;
+  }
+
+  #mainNav {
+    max-width: 600px;
+    display: flex;
+  }
+
+  #mainNav ul {
+    margin: auto;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  #mainNav ul li a {
+    color: #fff;
+    flex: none;
+    padding: .8rem 2vw;
+    text-decoration: none;
+  }
+
+  #mainNav ul li a:hover {
+    color: #5c0029;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.47ca9330.css.map */

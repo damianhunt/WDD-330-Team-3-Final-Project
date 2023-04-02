@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"4L9Ij":[function(require,module,exports) {
+})({"aaunJ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -565,25 +565,26 @@ var _localStorageMjs = require("./localStorage.mjs");
 var _localStorageMjsDefault = parcelHelpers.interopDefault(_localStorageMjs);
 //variables
 const cartBtn = document.querySelector(".cart-btn");
-const closeCartBtn = document.querySelector(".close-cart");
-const clearCart = document.querySelector(".clear-cart");
+const closeCartButton = document.querySelector(".close-cart");
+const clearCartButton = document.querySelector(".clear-cart");
+const cartNavBtn = document.querySelector(".nav-icon-cart");
 //cart nodes from the dom
 const cartDom = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cart-overlay");
-const productsDOM = document.querySelector(".products-center");
-const cartIterms = document.querySelector(".cart-overlay");
+const productsInTheDOM = document.querySelector(".products-area");
+const cartIterms = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 //const cartContent = document.querySelector(".cart-content");
 //
 let cart = [];
 //
-let buttonsDOM = [];
+let buttonsInTheDOM = [];
 //generate Ui
 class UI {
-    displayProducts(products) {
+    displayProducts(stock) {
         let result = "";
-        products.forEach((product)=>{
+        stock.forEach((product)=>{
             result += `<article class="product">
             <div class="img-container">
               <img src=${product.image} alt="" class="product-img" />
@@ -597,52 +598,51 @@ class UI {
             <h4>R ${product.price}</h4>
           </article>`;
         });
-        productsDOM.innerHTML = result;
+        productsInTheDOM.innerHTML = result;
     }
-    getBagButtons() {
+    getBtnsBag() {
         const buttons = [
             ...document.querySelectorAll(".bag-btn")
         ];
-        buttonsDOM = buttons;
+        buttonsInTheDOM = buttons;
         //console.log(buttons);
         buttons.forEach((button)=>{
             let id = button.dataset.id;
-            let inCart = cart.find((item)=>item.id === id);
-            if (inCart) {
+            let inTheCart = cart.find((item)=>item.id === id);
+            if (inTheCart) {
                 button.innerText = "In Cart";
                 button.disabled = true;
             }
             button.addEventListener("click", (event)=>{
                 event.target.innerText = "In Cart";
                 event.target.disabled = true;
-                //get product from the produts and
+                //get product from the stock or products from local storage and store it in a object
                 let cartItem = {
                     ...(0, _localStorageMjsDefault.default).getProduct(id),
-                    amount: 1
+                    units: 1
                 };
-                console.log(cartItem);
-                //add product to the cart
+                //add item or product clicked or chosen to the cartarray
                 cart = [
                     ...cart,
                     cartItem
                 ];
-                //save cart in local storage
-                (0, _localStorageMjsDefault.default).saveCart(cart);
-                //set cart values//
-                this.setCartValues(cart);
+                //save stored cart to the local storage
+                (0, _localStorageMjsDefault.default).saveCurrentCart(cart);
+                //set cartvalues =>cart array
+                this.updateSetCartValues(cart);
                 //diplay cart item
                 this.addCartItem(cartItem);
                 //show cart
-                this.showCart();
+                this.showCaseCart();
             });
         });
     }
-    setCartValues(cart) {
+    updateSetCartValues(cart) {
         let tempTotal = 0;
         let itemsTotal = 0;
         cart.map((item)=>{
-            tempTotal += item.price * item.amount;
-            itemsTotal += item.amount;
+            tempTotal += item.price * item.units;
+            itemsTotal += item.units;
         });
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
         cartIterms.innerText = itemsTotal;
@@ -655,42 +655,136 @@ class UI {
             <img src=${item.image} alt=${item.title}>
             <div>
                 <h4>${item.title}</h4>
-                <h5>$ ${item.price}</h5>
+                <h5>R ${item.price}</h5>
                 <span class="remove-item" data-id=${item.id}>
         remove
                 </span>
             </div>
             <div>
                 <i class="fas fa-chevron-up" data-id=${item.id}></i>
-                <p class="item-amount">${item.amount}</p>
+                <p class="item-amount">${item.units}</p>
                 <i class="fas fa-chevron-down" data-id=${item.id}></i>
             </div>`;
-        console.log(cartDom);
+        //console.log(cartDom)
         cartContent.appendChild(div);
-        cartDom.appendChild(cartContent);
-        cartOverlay.appendChild(cartDom);
-        console.log(cartDom);
+    //cartDom.appendChild(cartContent);
+    //cartOverlay.appendChild(cartDom);
+    //console.log(cartDom)
     }
-    showCart() {
-        cartOverlay.classList.add("transparentBcg");
-        cartDom.classList.add("showCart");
+    showCaseCart() {
+        cartOverlay.classList.add("transparentCover");
+        cartDom.classList.add("showCaseCart");
+    }
+    setUpApplication() {
+        cart = (0, _localStorageMjsDefault.default).getCartFromLocalStorage();
+        this.updateSetCartValues(cart);
+        this.fillupCart(cart);
+        cartBtn.addEventListener("click", this.showCaseCart);
+        closeCartButton.addEventListener("click", this.hideCart);
+    }
+    fillupCart(cart) {
+        cart.forEach((item)=>{
+            this.addCartItem(item);
+        });
+    }
+    hideCart() {
+        cartOverlay.classList.remove("transparentCover");
+        cartDom.classList.remove("showCaseCart");
+    }
+    cartFunctionality() {
+        //this is for cart clear button
+        clearCartButton.addEventListener("click", ()=>{
+            this.clearCart();
+        });
+        //inside cart logic
+        cartContent.addEventListener("click", (event)=>{
+            if (event.target.classList.contains("remove-item")) {
+                //store the item in a variable
+                let removeThisItem = event.target;
+                let itemId = removeThisItem.dataset.id;
+                // this line below is for removing from the dom
+                cartContent.removeChild(removeThisItem.parentElement.parentElement);
+                //this one below is for removing from cart array
+                this.removeThisItem(parseInt(itemId));
+            } else if (event.target.classList.contains("fa-chevron-up")) {
+                let addunits = event.target;
+                let itemId = addunits.dataset.id;
+                let temperalItem = cart.find((item)=>item.id === parseInt(itemId));
+                temperalItem.units = temperalItem.units + 1;
+                (0, _localStorageMjsDefault.default).saveCurrentCart(cart);
+                this.updateSetCartValues(cart);
+                addunits.nextElementSibling.innerText = temperalItem.units;
+            } else if (event.target.classList.contains("fa-chevron-down")) {
+                let subtractunits = event.target;
+                let itemId = subtractunits.dataset.id;
+                let temperalItem = cart.find((item)=>item.id === parseInt(itemId));
+                temperalItem.units = temperalItem.units - 1;
+                if (temperalItem.units > 0) {
+                    (0, _localStorageMjsDefault.default).saveCurrentCart(cart);
+                    this.updateSetCartValues(cart);
+                    subtractunits.previousElementSibling.innerText = temperalItem.units;
+                } else {
+                    cartContent.removeChild(subtractunits.parentElement.parentElement);
+                    this.removeThisItem(parseInt(itemId));
+                }
+            }
+        });
+    }
+    clearCart() {
+        // Remove all items from the cart array
+        cart = [];
+        this.updateSetCartValues(cart);
+        (0, _localStorageMjsDefault.default).saveCurrentCart(cart);
+        // Remove all items from the cart DOM
+        while(cartContent.children.length > 0)cartContent.removeChild(cartContent.children[0]);
+        // Enable all add to cart buttons
+        buttonsInTheDOM.forEach((button)=>{
+            button.disabled = false;
+            button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
+        });
+        this.hideCart();
+    }
+    removeThisItem(id) {
+        console.log(id);
+        cart = cart.filter((cartItem)=>cartItem.id !== id);
+        console.log(cart);
+        //console.log(cart);
+        this.updateSetCartValues(cart);
+        //save cart in local storage
+        (0, _localStorageMjsDefault.default).saveCurrentCart(cart);
+        let button = this.getSingleBtn(id);
+        button.disabled = false;
+        button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
+    }
+    getSingleBtn(id) {
+        return buttonsInTheDOM.find((button)=>button.dataset.id === id);
     }
 } // end of UI  class
 //storage
 document.addEventListener("DOMContentLoaded", ()=>{
     const ui = new UI();
     const products = new (0, _getproductsMjsDefault.default)();
+    // set up application
+    ui.setUpApplication();
     //get all products
     products.getProducts().then((products)=>{
         ui.displayProducts(products);
         (0, _localStorageMjsDefault.default).saveProducts(products);
     }).then(()=>{
-        ui.getBagButtons();
+        ui.getBtnsBag();
+        ui.cartFunctionality();
     });
 });
-console.log("Hello ");
+//console.log("Hello ");
+// hamburger
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+const x = document.getElementById("hamburgerBtn");
+x.onclick = toggleMenu;
 
-},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"hLSXH":[function(require,module,exports) {
+},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let url = "https://fakestoreapi.com/products";
@@ -710,7 +804,7 @@ class Products {
 }
 exports.default = Products;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}],"7XFfv":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -742,7 +836,7 @@ exports.export = function(dest, destName, get) {
 
 },{}],"iIdyc":[function(require,module,exports) {
 //local storage
-// establish a function that takes an array and stringfy it 
+// establish a function that takes an array and stringfy it
 /*
 when you access the localStorage there is many functions available to you this time use the setItem
  then pass the first argument is a key that will be matched with an array of the products passed as an argument 
@@ -750,22 +844,31 @@ when you access the localStorage there is many functions available to you this t
 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class Storage {
-    //this saves the products catalogue to the local storage 
+    //this saves the products catalogue to the local storage
     static saveProducts(products) {
         localStorage.setItem("products", JSON.stringify(products));
     }
-    //this one gets the product we have selected based on product id from the localstorage 
+    //this one gets the product we have selected based on product id from the localstorage
     static getProduct(id) {
         let products = JSON.parse(localStorage.getItem("products"));
         return products.find((product)=>product.id == id);
     }
     //this saves the products selected to the local storage under cart
-    static saveCart(cart) {
+    static saveCurrentCart(cart) {
         localStorage.setItem("cart", JSON.stringify(cart));
+    }
+    //get cart from local storage
+    static getCartFromLocalStorage() {
+        let cartData = JSON.parse(localStorage.getItem("cart"));
+        if (cartData !== null) return cartData;
+        else {
+            let cart = [];
+            return cart;
+        }
     }
 }
 exports.default = Storage;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7XFfv"}]},["4L9Ij","gLLPy"], "gLLPy", "parcelRequirea26a")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aaunJ","gLLPy"], "gLLPy", "parcelRequirea26a")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

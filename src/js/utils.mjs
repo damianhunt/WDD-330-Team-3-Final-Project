@@ -25,6 +25,12 @@ export function renderListWithTemplate(
       callback(data);
     }
   }
+
+  async function loadTemplate(path) {
+    let fetchedData = await fetch(path);
+    let text = await fetchedData.text();
+    return text;
+  }
   
   export async function loadHeaderFooter() {
     const templateForHeader = await loadTemplate("../partials/header.html");

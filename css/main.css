@@ -18,6 +18,21 @@ body {
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
 }
+
+/* -----footer css-----*/
+.social img {
+  max-width: 30px;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  padding: 5px;
+}
+
+
+/* -----End of footer css-----*/
+
 /* -----navbar css-----*/
 .navbar {
   position: sticky;

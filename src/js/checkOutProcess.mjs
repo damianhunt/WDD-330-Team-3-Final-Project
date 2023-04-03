@@ -1,5 +1,5 @@
 // import { getLocalStorage, setLocalStorage } from "./utils.mjs";
-// import Storage from "../localStorage.mjs";
+import Storage from "../localStorage.mjs";
 import ExternalServices from "./ExternalServices.mjs";
 
 // takes a form element and returns an object where the key is the "name" of the form input.

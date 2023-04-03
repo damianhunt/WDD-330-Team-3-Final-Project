@@ -20,6 +20,16 @@ body {
   font-family: Lato, sans-serif;
 }
 
+.social img {
+  max-width: 30px;
+  padding: 5px;
+}
+
+footer {
+  padding: 5px;
+  display: flex;
+}
+
 .navbar {
   height: 60px;
   width: 100%;

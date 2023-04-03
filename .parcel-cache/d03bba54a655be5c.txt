@@ -1,4 +1,4 @@
-6260
+6265
 156C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\ordered-binary\README.md133249201944131973 0
 141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\productsFruit.json133249340104503041 0
 150C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\tslib\package.json133249201947616058 0
@@ -29,7 +29,7 @@
 138C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\base-x133249201935206931 1
 155C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-select\lib\index.js133249201938508088 0
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\regions\CR.js133249201937411029 0
-123C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist133249355892520927 1
+123C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist133250214374494466 1
 125C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\images133250201199160205 1
 141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\callsites133244932806341052 1
 137C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\tslib133249201947645971 1
@@ -79,7 +79,7 @@
 131C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\checkout133249340104483097 1
 169C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\core\test\PublicAsset.test.js133249201916850656 0
 154C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\json5\lib\unicode.d.ts133249201940532667 0
-125C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\js133250211957334191 1
+125C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\js133250214132513751 1
 167C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\csso\lib\replace\property\border.js133249201939325899 0
 145C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\parent-module133244932812265219 1
 162C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\nth-check\lib\esm\index.js.map133249201943983394 0
@@ -137,16 +137,17 @@
 155C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-select\lib\types.js133249201938597855 0
 149C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\commander\LICENSE133249201938268734 0
 133C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\js\main.js133250213148385035 0
-160C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\node_path\x\aaa133244932813908944 1
-173C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\eslint\lib\rules\array-bracket-newline.js133244932807398227 0
-152C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\msgpackr-extract\bin133249201942337843 1
-170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\core\src\public\Environment.js133249201916710746 0
-172C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\resolver\other_path\root.js133244932814108411 0
-143C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@jridgewell133244932804894923 1
-146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\is-core-module133244932810549805 1
-163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\dotenv-expand\dotenv-expand.png133249201939735172 0
-157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\shebang-command\readme.md133244932814567348 0
-134C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\js\utils.js133250210412847557 0
+174C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\utility-types\dist\aliases-and-guards.d.ts133249201947725759 0
+171C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\resolver\same_names\foo.js133244932814128348 0
+161C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\domelementtype\lib\index.d.ts133249201939585368 0
+169C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\rellist.js133249201936772742 0
+154C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\fs\src\find.js133249201918237896 0
+178C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\transformer-postcss\lib\loadPlugins.js133249201933033503 0
+156C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\v8-compile-cache\LICENSE133249201947795569 0
+157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\chalk\source\templates.js133244932806380942 0
+170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\cosmiconfig\dist\ExplorerBase.d.ts.map133249201938348518 0
+171C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-tree\lib\common\OffsetToLocation.js133249201938687611 0
+135C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\js\utils.mjs133250210412847557 0
 142C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\src\checkout\index.html133250212700301654 0
 141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\js-tokens133249201940442905 1
 156C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\abortcontroller-polyfill133249201935167036 1
@@ -168,6 +169,12 @@
 143C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\ansi-styles133244932806171504 1
 145C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\function-bind133244932810130923 1
 150C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\.package-lock.json133249201915322561 0
+160C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\node_path\x\aaa133244932813908944 1
+173C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\eslint\lib\rules\array-bracket-newline.js133244932807398227 0
+152C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\msgpackr-extract\bin133249201942337843 1
+170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\core\src\public\Environment.js133249201916710746 0
+172C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\resolver\other_path\root.js133244932814108411 0
+143C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@jridgewell133244932804894923 1
 168C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\uri-js\dist\esnext\schemes\ws.js.map133244932815843768 0
 208C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\.pnpm\source-pnpm@1.0.0133249201918636819 1
 171C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\autofocus.js133249201935436314 0
@@ -495,7 +502,7 @@
 168C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-what\lib\commonjs\index.d.ts.map133249201939106493 0
 197C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\js-sdsl\dist\cjs\container\TreeContainer\Base\TreeIterator.js.map133244932810978649 0
 154C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\msgpackr\node-index.js133249201943265357 0
-228C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.55c3ceaa.jpg133249201914986911 0
+228C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.55c3ceaa.jpg133250214362546481 0
 194C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\core\test\fixtures\custom-targets-distdir\package.json133249201916960068 0
 164C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\eslint\lib\rules\dot-notation.js133244932807557799 0
 192C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\dom-serializer\node_modules\entities\lib\decode_codepoint.js133249201939505420 0
@@ -521,6 +528,8 @@
 140C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\inherits133244932810509907 1
 181C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\fs-search\fs-search.linux-arm64-musl.node133249201917773028 0
 143C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\is-arrayish133249201940383084 1
+146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\is-core-module133244932810549805 1
+163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\dotenv-expand\dotenv-expand.png133249201939735172 0
 144C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\entities\lib133249201939904356 1
 166C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\opus.js133249201936653060 0
 155C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\js-yaml\lib\type\seq.js133244932811646868 0
@@ -1204,6 +1213,7 @@
 176C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\lmdb\dependencies\v8\v8-fast-api-calls-v16.h133249201941709656 0
 151C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\word-wrap\README.md133244932816304369 0
 146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\vite\dist\node133244932816204634 1
+134C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\about.html133250214374395027 0
 179C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\core\test\fixtures\plugins\node_modules133249201917059815 1
 150C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\which\CHANGELOG.md133244932816264477 0
 160C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\types\lib\index.d.ts133249201933232211 0
@@ -1299,15 +1309,6 @@
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\vite\bin\openChrome.applescript133244932815923554 0
 161C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\nanoid\async\index.browser.js133244932811995942 0
 161C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\v8-compile-cache\CHANGELOG.md133249201947775628 0
-174C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\utility-types\dist\aliases-and-guards.d.ts133249201947725759 0
-171C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\resolver\same_names\foo.js133244932814128348 0
-161C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\domelementtype\lib\index.d.ts133249201939585368 0
-169C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\rellist.js133249201936772742 0
-154C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\fs\src\find.js133249201918237896 0
-178C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\transformer-postcss\lib\loadPlugins.js133249201933033503 0
-156C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\v8-compile-cache\LICENSE133249201947795569 0
-157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\chalk\source\templates.js133244932806380942 0
-170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\cosmiconfig\dist\ExplorerBase.d.ts.map133249201938348518 0
 233C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\.pnpm\source-pnpm@1.0.0\node_modules\source-pnpm133249201918646790 1
 156C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\shebang-command\index.js133244932814557210 0
 158C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\module_dir.js133244932813859068 0
@@ -1714,7 +1715,7 @@
 149C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\esquery\README.md133244932809372940 0
 146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\domhandler\lib133249201939625106 1
 180C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\resolve\test\resolver\browser_field\package.json133244932813999738 0
-134C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.html133249355892510958 0
+134C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.html133250214374395027 0
 158C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\svgo\plugins\removeDesc.js133249201947366722 0
 170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\transformer-babel\src\utils.js133249201921462942 0
 148C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\terser\lib\utils133244932815305211 1
@@ -2077,6 +2078,7 @@
 167C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\eslint\lib\rules\prefer-template.js133244932808834393 0
 166C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\package-manager\src\Npm.js133249201919843598 0
 155C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\shebang-command\license133244932814567348 0
+157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\shebang-command\readme.md133244932814567348 0
 151C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\semver\CHANGELOG.md133249201946453151 0
 146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\semver\LICENSE133249201946453151 0
 168C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\.bin\download-msgpackr-prebuilds.ps1133249201915166423 0
@@ -2891,7 +2893,7 @@
 177C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\optimizer-image\lib\ImageOptimizer.js133249201919105568 0
 157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\is-path-inside\index.d.ts133244932810629586 0
 153C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\msgpackr\benchmark.md133249201942676935 0
-147C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\src\checkout\index.html133249353813673314 0
+147C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\src\checkout\index.html133250214374395027 0
 155C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\js-yaml\lib\type\set.js133244932811656832 0
 148C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\msgpackr\LICENSE133249201942666957 0
 175C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\eslint\lib\rules\no-irregular-whitespace.js133244932808156200 0
@@ -4414,7 +4416,6 @@
 175C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-tree\lib\definition-syntax\tokenizer.js133249201938727508 0
 164C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-tree\lib\convertor\create.js133249201938707553 0
 159C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-tree\lib\common\List.js133249201938687611 0
-171C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-tree\lib\common\OffsetToLocation.js133249201938687611 0
 150C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-select\LICENSE133249201938468203 0
 152C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\css-select\README.md133249201938468203 0
 165C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\transformer-image\LICENSE133249201921506895 0
@@ -4681,6 +4682,7 @@
 168C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\run-in.js133249201936792692 0
 177C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\rest-parameters.js133249201936792692 0
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\regions\VE.js133249201938079255 0
+141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.ce96ed2d.js133250214374395027 0
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\regions\VN.js133249201938089219 0
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\regions\WF.js133249201938099347 0
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\regions\WS.js133249201938109160 0
@@ -4754,6 +4756,7 @@
 163C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\utils\src\getRootDir.js133249201933551365 0
 179C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\css-marker-pseudo.js133249201935795353 0
 180C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\css-math-functions.js133249201935805325 0
+146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.9a88ee4a.css.map133250214374484501 0
 183C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\css-media-interaction.js133249201935805325 0
 181C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\once-event-listener.js133249201936643079 0
 170C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@parcel\codeframe\lib\codeframe.js.map133249201916229304 0
@@ -4798,7 +4801,7 @@
 169C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\dataset.js133249201936034705 0
 157C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\@swc\helpers\lib\index.js133249201934748151 0
 185C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\date-tolocaledatestring.js133249201936045635 0
-160C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\fashionova-name-no-back.4ba9e108.png133249201915006978 0
+160C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\fashionova-name-no-back.4ba9e108.png133250214368111053 0
 184C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\declarative-shadow-dom.js133249201936045635 0
 169C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\details.js133249201936054666 0
 179C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\node_modules\caniuse-lite\data\features\deviceorientation.js133249201936054666 0
@@ -6254,8 +6257,10 @@
 228C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\Fashion-Nova-Online-Store-Neon-Sign-in-Wish-Wish-by-DJ-Khaled-ft.-Cardi-B-21-Savage-800x500.84257064.jpg133249352565105735 0
 142C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.47ca9330.css133249355143965203 0
 141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.4d6bcbeb.js133249352565264392 0
+142C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.9a88ee4a.css133250214374395027 0
+145C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.ce96ed2d.js.map133250214374474541 0
 142C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\index.d78bcf5b.css133249201915067106 0
 141C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\logo.b3ecd760.svg133244932801868613 0
 146C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\product-1.6825b34f.jpg133244932801938415 0
 127C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\src133249341254696416 1
-136C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\src\checkout133249353813683289 1
+136C:\Damian\BYU Idaho\2023 Semster 1 Jan - April 2023\WDD 330 - Web Frontend Development II\WDD-330-Team-3-Final-Project\dist\src\checkout133250214374424660 1

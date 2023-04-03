@@ -20,6 +20,16 @@ body {
   font-family: Lato, sans-serif;
 }
 
+.social img {
+  max-width: 30px;
+  padding: 5px;
+}
+
+footer {
+  padding: 5px;
+  display: flex;
+}
+
 .navbar {
   height: 60px;
   width: 100%;
@@ -342,6 +352,56 @@ body {
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+.logo img {
+  max-height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.checkout-form {
+  max-width: 800px;
+  background-color: var(--mainGrey);
+  margin: auto;
+  padding: .5em;
+}
+
+.products-checkout {
+  text-align: center;
+  padding: 10px;
+}
+
+.checkout-form label {
+  display: block;
+}
+
+.checkout-form input {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.checkout-summary > ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.checkout-summary li {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.checkout-summary input {
+  width: 25%;
+  font-size: 1em;
+}
+
+#checkoutSubmit {
+  background-color: var(--primaryColor);
+  color: var(--mainGrey);
+  margin-top: 2px;
+  padding: 5px;
 }
 
 @media only screen and (min-width: 60rem) {

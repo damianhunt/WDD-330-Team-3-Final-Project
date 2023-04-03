@@ -18,6 +18,20 @@ body {
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
 }
+
+/* -----footer css-----*/
+.social img {
+  max-width: 40px;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  padding: 5px;
+}
+
+/* -----End of footer css-----*/
+
 /* -----navbar css-----*/
 .navbar {
   position: sticky;
@@ -320,6 +334,54 @@ display: block;
 
 /* --------------- End of Cart ---------------- */
 
+/* --------------- Checkout ---------------- */
+.logo img {
+  max-height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+.checkout-form {
+  padding: 0.5em;
+  max-width: 800px;
+  background-color: var(--mainGrey);
+  margin: auto;
+}
+
+.products-checkout {
+  padding: 10px;
+  text-align: center;
+}
+.checkout-form label {
+  display: block;
+}
+.checkout-form input {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.checkout-summary > ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.checkout-summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-summary input {
+  width: 25%;
+  font-size: 1em;
+}
+
+#checkoutSubmit{
+  background-color: var(--primaryColor);
+  color: var(--mainGrey);
+  padding: 5px;
+  margin-top: 2px;
+}
+
+/* --------------- End of Checkout ---------------- */
 
 /* -------------- Large Screen --------------- */
 @media only screen and (min-width: 60rem) {

@@ -1,6 +1,9 @@
 //import Ui from "./displayProducts.mjs";
 import Products from "./getproducts.mjs";
 import Storage from "./localStorage.mjs";
+import { loadHeaderFooter } from './utils.mjs';
+
+loadHeaderFooter();
 
 //variables
 const cartBtn = document.querySelector(".cart-btn");
@@ -254,3 +257,9 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
+
+async function loadTemplate(path) {
+  let fetchedData = await fetch(path);
+  let text = await fetchedData.text();
+  return text;
+}

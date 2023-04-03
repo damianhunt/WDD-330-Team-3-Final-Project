@@ -1,12 +1,12 @@
 {
-  "name": "my-cool-project",
+  "name": "fashion-nova",
   "version": "1.0.0",
   "description": "WDD330 final project",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Brother Nelson <nelsoned@byui.edu>",
+  "author": "McDonald Musimwa, Damian Hunt, Laurels Echichinwo, Kigame Kisia",
   "dependencies": {
     "eslint": "^8.36.0",
     "parcel": "^2.8.3",

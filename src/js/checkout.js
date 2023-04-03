@@ -1,4 +1,4 @@
-import CheckoutProcess from './checkOutProcess.mjs';
+import CheckoutProcess from "./CheckOutProcess.mjs";
 // import { loadHeaderFooter } from './utils.mjs';
 // import Storage from "..localStorage.mjs";
 

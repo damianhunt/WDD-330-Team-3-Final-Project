@@ -254,3 +254,33 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
+
+async function loadTemplate(path) {
+  let fetchedData = await fetch(path);
+  let text = await fetchedData.text();
+  return text;
+}
+
+export function renderWithTemplate(
+  template,
+  parentElement,
+  data,
+  callback,
+  position = "afterbegin",
+  clear = false
+) {
+  parentElement.insertAdjacentHTML("afterbegin", template);
+  if (callback) {
+    callback(data);
+  }
+}
+
+export async function loadHeaderFooter() {
+  const templateForHeader = await loadTemplate("../partials/header.html");
+  const elementForHeader = document.querySelector("#main-header");
+  const templateForFooter = await loadTemplate("../partials/footer.html");
+  const elementForFooter = document.querySelector("#main-footer");
+
+  renderWithTemplate(templateForHeader, elementForHeader);
+  renderWithTemplate(templateForFooter, elementForFooter);
+}

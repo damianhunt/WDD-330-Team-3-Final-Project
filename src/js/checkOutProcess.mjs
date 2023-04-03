@@ -92,8 +92,8 @@ export default class CheckoutProcess {
     try {
       const res = await services.checkout(json);
       console.log(res);
-      setLocalStorage('so-cart',[]);
-      location.assign('/checkout/success.html');
+      setLocalStorage('cart',[]);
+      location.assign('/src/checkout/success.html');
     } catch (err) {
       for (let message in err.message){
         alertMessage(err.message[message]);

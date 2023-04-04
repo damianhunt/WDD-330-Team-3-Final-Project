@@ -246,20 +246,3 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cartFunctionality();
     });
 });
-//console.log("Hello ");
-
-// hamburger
-function toggleMenu() {
-  document.getElementById("primaryNav").classList.toggle("open");
-  document.getElementById("hamburgerBtn").classList.toggle("open");
-
-}
-
-const x = document.getElementById('hamburgerBtn')
-x.onclick = toggleMenu;
-
-async function loadTemplate(path) {
-  let fetchedData = await fetch(path);
-  let text = await fetchedData.text();
-  return text;
-}

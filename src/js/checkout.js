@@ -16,3 +16,4 @@ document.querySelector("#checkoutSubmit").addEventListener("click", (e) => {
   myForm.reportValidity();
   if (chk_status) mycheckOut.checkout();
 });
+

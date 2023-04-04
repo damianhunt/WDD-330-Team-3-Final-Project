@@ -21,6 +21,12 @@ const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 //const cartContent = document.querySelector(".cart-content");
 //
+
+//Checkout//
+
+let checkoutTotal = document.querySelector("#orderTotal");
+
+//
 let cart = [];
 
 //
@@ -89,8 +95,11 @@ class UI {
       itemsTotal += item.units;
     });
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+    //checkoutTotal.innerHTML = cartTotal
     cartIterms.innerText = itemsTotal;
   }
+
+
   /*The problem is that when i click add item it is added to cart but then not injected into the dom*/
   //this function creates a templateand inserts items that has been selected
   addCartItem(item) {

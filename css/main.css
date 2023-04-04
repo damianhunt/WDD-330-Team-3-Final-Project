@@ -36,7 +36,7 @@ footer {
 #main-header {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navbar {
@@ -180,8 +180,12 @@ display: block;
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
-  text-decoration: none;
 }
+
+.checkoutButton a{
+  color: var(--mainBlack);
+}
+
 .checkoutButton:hover {
   background: transparent;
   color: var(--primaryColor);

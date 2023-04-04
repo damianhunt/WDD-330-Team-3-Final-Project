@@ -2,7 +2,7 @@
 
 :root {
   --primaryColor: #780991c7;
-  --mainWhite: #fffbdd;
+  --mainWhite: #ffffff;
   --mainBlack: #222;
   --mainGrey: hsl(270, 11%, 83%);
   --mainSpacing: 0.1rem;
@@ -33,6 +33,12 @@ footer {
 /* -----End of footer css-----*/
 
 /* -----navbar css-----*/
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -160,6 +166,23 @@ display: block;
   cursor: pointer;
 }
 .banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.checkoutButton {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  text-decoration: none;
+}
+.checkoutButton:hover {
   background: transparent;
   color: var(--primaryColor);
 }
@@ -330,6 +353,10 @@ display: block;
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+.cart-footer button {
+  padding: 5px;
 }
 
 /* --------------- End of Cart ---------------- */

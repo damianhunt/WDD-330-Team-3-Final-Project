@@ -564,7 +564,7 @@ var _getproductsMjsDefault = parcelHelpers.interopDefault(_getproductsMjs);
 var _localStorageMjs = require("./localStorage.mjs");
 var _localStorageMjsDefault = parcelHelpers.interopDefault(_localStorageMjs);
 var _utilsMjs = require("./utils.mjs");
-(0, _utilsMjs.loadHeaderFooter)();
+//loadHeaderFooter();
 //variables
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartButton = document.querySelector(".close-cart");

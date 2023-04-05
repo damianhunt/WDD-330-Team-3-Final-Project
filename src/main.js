@@ -3,7 +3,7 @@ import Products from "./getproducts.mjs";
 import Storage from "./localStorage.mjs";
 import { loadHeaderFooter } from './utils.mjs';
 
-loadHeaderFooter();
+//loadHeaderFooter();
 
 //variables
 const cartBtn = document.querySelector(".cart-btn");

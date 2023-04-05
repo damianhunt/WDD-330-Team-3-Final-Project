@@ -563,6 +563,8 @@ var _getproductsMjs = require("./getproducts.mjs");
 var _getproductsMjsDefault = parcelHelpers.interopDefault(_getproductsMjs);
 var _localStorageMjs = require("./localStorage.mjs");
 var _localStorageMjsDefault = parcelHelpers.interopDefault(_localStorageMjs);
+var _utilsMjs = require("./utils.mjs");
+(0, _utilsMjs.loadHeaderFooter)();
 //variables
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartButton = document.querySelector(".close-cart");
@@ -576,6 +578,9 @@ const cartIterms = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 //const cartContent = document.querySelector(".cart-content");
+//
+//Checkout//
+let checkoutTotal = document.querySelector("#orderTotal");
 //
 let cart = [];
 //
@@ -645,6 +650,7 @@ class UI {
             itemsTotal += item.units;
         });
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+        //checkoutTotal.innerHTML = cartTotal
         cartIterms.innerText = itemsTotal;
     }
     /*The problem is that when i click add item it is added to cart but then not injected into the dom*/ //this function creates a templateand inserts items that has been selected
@@ -775,23 +781,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         ui.cartFunctionality();
     });
 });
-//console.log("Hello ");
-// hamburger
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
-const x = document.getElementById("hamburgerBtn");
-x.onclick = toggleMenu;
 
-},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
+},{"./getproducts.mjs":"hLSXH","./localStorage.mjs":"iIdyc","./utils.mjs":"6pXkX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hLSXH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-let url = "https://server.com/data/products";
+let url = "https://fakestoreapi.com/products";
 class Products {
     async getProducts() {
         try {
-            let result = await fetch(items);
+            let result = await fetch(url);
             if (result.ok) {
                 let data = await result.json();
                 //console.log(data);
@@ -840,7 +838,6 @@ exports.export = function(dest, destName, get) {
 /*
 when you access the localStorage there is many functions available to you this time use the setItem
  then pass the first argument is a key that will be matched with an array of the products passed as an argument 
-
 */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class Storage {
@@ -869,6 +866,32 @@ class Storage {
 }
 exports.default = Storage;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aaunJ","gLLPy"], "gLLPy", "parcelRequirea26a")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6pXkX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "renderListWithTemplate", ()=>renderListWithTemplate);
+parcelHelpers.export(exports, "renderWithTemplate", ()=>renderWithTemplate);
+parcelHelpers.export(exports, "loadHeaderFooter", ()=>loadHeaderFooter);
+function renderListWithTemplate(templateFn, parentElement, list, position = "afterbegin", clear = false) {
+    const htmlStrings = list.map(templateFn);
+    if (clear) parentElement.innerHTML = "";
+    parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
+}
+function renderWithTemplate(template, parentElement, data, callback, position = "afterbegin", clear = false) {
+    parentElement.insertAdjacentHTML("afterbegin", template);
+    if (callback) callback(data);
+}
+async function loadTemplate(path) {
+    let fetchedData = await fetch(path);
+    let text = await fetchedData.text();
+    return text;
+}
+async function loadHeaderFooter() {
+    const templateForFooter = await loadTemplate("../partials/footer.html");
+    const elementForFooter = document.querySelector("#main-footer");
+    renderWithTemplate(templateForFooter, elementForFooter);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aaunJ","gLLPy"], "gLLPy", "parcelRequirefde9")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

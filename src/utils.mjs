@@ -33,11 +33,8 @@ export function renderListWithTemplate(
   }
   
   export async function loadHeaderFooter() {
-    const templateForHeader = await loadTemplate("../partials/header.html");
-    const elementForHeader = document.querySelector("#main-header");
     const templateForFooter = await loadTemplate("../partials/footer.html");
     const elementForFooter = document.querySelector("#main-footer");
   
-    renderWithTemplate(templateForHeader, elementForHeader);
     renderWithTemplate(templateForFooter, elementForFooter);
   }

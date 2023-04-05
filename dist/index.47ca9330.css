@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 :root {
   --primaryColor: #780991c7;
-  --mainWhite: #fffbdd;
+  --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #d4cfd8;
   --mainSpacing: .1rem;
@@ -21,13 +21,19 @@ body {
 }
 
 .social img {
-  max-width: 30px;
+  max-width: 40px;
   padding: 5px;
 }
 
 footer {
   padding: 5px;
   display: flex;
+}
+
+#main-header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -168,6 +174,27 @@ footer {
 }
 
 .banner-btn:hover {
+  color: var(--primaryColor);
+  background: none;
+}
+
+.checkoutButton {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+}
+
+.checkoutButton a {
+  color: var(--mainBlack);
+}
+
+.checkoutButton:hover {
   color: var(--primaryColor);
   background: none;
 }
@@ -352,6 +379,10 @@ footer {
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+.cart-footer button {
+  padding: 5px;
 }
 
 .logo img {
